@@ -1,0 +1,76 @@
+<div>
+    <header :class="css.newheader"></header>
+    <section :class="css.newsec" :style="styleobj">
+        <div :class="css.headimg">
+            <div :class="css.rule">
+                <a href="#">活动规则</a>
+            </div>
+        </div>
+
+        <div :class="css.bottomdiv">
+            <div :class="css.botverbag">
+                <!-- 四个卡券 -->
+                <div :class="css.bagbox">
+                    <div :class="css.voucher001">
+                    </div>
+                    <div :class="css.voucher002">
+                    </div>
+                    <div :class="css.voucher003">
+                    </div>
+                    <div :class="css.voucher004">
+                    </div>
+                </div>
+
+
+                <!-- 按钮 一键领取 -->
+                <div :class="css.btn" @click="showLogin">一键领取</div>
+
+            </div>
+
+            <!-- 底部中间位置 -->
+            <div :class="css.botcenter">
+
+            </div>
+
+            <!-- 底部位置 -->
+            <div :class="css.bottombox">
+                <!-- 省 -->
+                <div :class="css.item">
+                    <div :class="css.itemimg01"></div>
+                    <span>4s店养车</span>
+                    <span style="opacity:1;font-size:32px;"><strong>总价低至5折</strong></span>
+                </div>
+                <!-- 专 -->
+                <div :class="css.item">
+                    <div :class="css.itemimg02"></div>
+                    <span>80家大品牌</span>
+                    <span style="opacity:1;font-size:32px;"><strong>400家4s店任你选</strong></span>
+                </div>
+                <!-- 正 -->
+                <div :class="css.item">
+                    <div :class="css.itemimg03"></div>
+                    <span>100%品牌配件</span>
+                    <span style="opacity:1;font-size:32px;"><strong>明码标价</strong></span>
+                </div>
+                <!-- 快 -->
+                <div :class="css.item">
+                    <div :class="css.itemimg04"></div>
+                    <span>在线预约</span>
+                    <span style="opacity:1;font-size:32px;"><strong>到店0等待</strong></span>
+
+                </div>
+            </div>
+            <div :class="css.tagbtn">
+                <p style="color:red;">关闭</p>
+                <hr>
+                <p style="color:black;">查看</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <login v-if="isLoginShow" @close="closeLogin"></login>
+    <loading v-if="isload"></loading> 
+</div>

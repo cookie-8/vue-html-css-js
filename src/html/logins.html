@@ -1,0 +1,31 @@
+<div :class="css.bigbox">
+    
+    <div :class="css.loginsbox">
+            <div :class="css.closebox" @click="closebox">
+                    <h3>关闭</h3>
+                </div>
+
+                
+        <div :class="css.logintag">
+            <strong>欢迎登录</strong>
+        </div>
+        <div :class="css.logincontent">
+            <div :class="css.mobileinputdiv">
+                <input id="mobile" :class="css.loginmobile" type="text" placeholder="请输入手机号" value="">
+            </div>
+            <div :class="css.jiaoyanmadiv">
+                <input id="yanzhengma" :class="css.loginyanzhengma" type="text" placeholder="验证码" value="">
+                <button :class="css.btn" @click="isMobile">获取验证码</button>
+            </div>
+
+        </div>
+
+        <div :class="css.loginbtn" :disabled="isable" @click="loginseccess(isable)">
+            登录
+        </div>
+
+    </div>
+
+
+
+</div>

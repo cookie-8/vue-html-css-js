@@ -1,0 +1,20 @@
+<div>
+    <doit :name.sync="username"
+    :foo="foo" 
+    :bar="bar" 
+    @one.native="triggerOne" 
+    @two="triggerTwo">
+
+    </doit>
+    <p>{{username}}</p>
+
+    <hr>
+
+    <doit></doit>
+
+    <hr>
+    <p>{{username2}}</p>
+
+    <hr>
+    
+</div>
