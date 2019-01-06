@@ -1,0 +1,28 @@
+.pagenon{
+    width:300px;
+    height:400px;
+    border:1px black solid;
+    background-color: azure;
+    position: relative;
+    text-align: center;
+}
+.showbox{
+    width:200px;
+    min-height:250px;
+    border:1px red solid;
+    background-color: white;
+    position: relative;
+    margin:auto;
+    margin-top:20px;
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: azure;
+    position: relative;
+    margin:auto;
+    margin-top:20px;
+}
+h4{
+    margin-top:20px;
+}
